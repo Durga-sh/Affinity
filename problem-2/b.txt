@@ -1,0 +1,13 @@
+Primary connecting columns:
+
+ncbi_id - connects taxonomy ↔ rfamseq
+rfamseq_acc - connects rfamseq ↔ full_region
+rfam_acc - connects family ↔ full_region
+
+Complete relationship map:
+
+taxonomy.ncbi_id → rfamseq.ncbi_id
+rfamseq.rfamseq_acc → full_region.rfamseq_acc
+family.rfam_acc → full_region.rfam_acc
+
+Additional tables may connect through rfam_acc for family-related information
